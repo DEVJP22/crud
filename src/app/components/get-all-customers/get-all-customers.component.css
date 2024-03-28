@@ -1,0 +1,98 @@
+.btn {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  appearance: none;
+  background-color: #ffffff;
+  border-radius: 10px;
+  list-style: none;
+  overflow: hidden;
+  border-width: 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.609);
+  font-weight: 650;
+}
+.btn:focus {
+  box-shadow: #e7e4d6 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+}
+.btn:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  transform: translateY(-2px);
+  color: rgba(222, 2, 2, 0.689);
+}
+
+.btn:active {
+  box-shadow: #d6d6e7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+/* ----------- */
+
+#plant {
+  margin-top: 35%;
+  margin-left: -80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: auto;
+  .grass {
+    width: 70px;
+    height: 70px;
+    background: #00ea52;
+    content: "";
+    border-radius: 0px 100px;
+    transform: rotate(20deg);
+    transform-origin: center center;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: inset 4px 2px 20px rgba(42, 187, 155, 0.6);
+    left: -25px;
+    top: 25px;
+    &::after {
+      position: absolute;
+      width: 100px;
+      height: 110px;
+      background: #00ea52;
+      content: "";
+      border-radius: 0px 100px;
+      transform: rotate(40deg);
+      transform-origin: bottom right;
+      right: 1px;
+      bottom: 0.5px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2),
+        inset 4px 2px 20px rgba(42, 187, 155, 0.6);
+    }
+  }
+  #base {
+    width: 125px;
+    content: "";
+    border-top: 140px solid rgba(42, 187, 155, 0.15);
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-radius: 5px;
+    transform: scale(1.05);
+    backdrop-filter: blur(15.5px);
+    -webkit-backdrop-filter: blur(11.5px);
+  }
+}
+#text {
+  margin-top: 50px;
+  letter-spacing: 10px;
+  text-align: center;
+  font-weight: 100;
+}
+#subtext {
+  margin-top: 5px;
+  font-weight: 400 !important;
+  opacity: 0.5;
+}
+
+/* ------------ */
